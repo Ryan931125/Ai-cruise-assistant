@@ -1,0 +1,4 @@
+timestamp,scenario,event,prompt,throttle,brake,steering_angle,turn_signal,handbrake,speed,front_distance,safe_distance_threshold,steering_change,mode,corner_distances,distance_sum_threshold
+2025-05-03 16:04:41,highway,overspeed,You are currently exceeding the speed limit. Please slow down to a safe speed.,0,0,0.0,False,False,120.0,inf,10.0,False,forward,"[0.0, 0.0, 0.0, 0.0]",12.0
+2025-05-03 16:04:51,highway,unsafe_distance,You are following the vehicle ahead too closely. Ease off the accelerator or brake gently to maintain at least a two‑second gap.,0,0,0.0,False,False,0.0,5.0,10.0,False,forward,"[0.0, 0.0, 0.0, 0.0]",12.0
+2025-05-03 16:05:01,highway,lane_change_no_signal,"You changed lanes without signaling. Next time, turn on your indicator well before you move.",0,0,0.0,False,False,0.0,inf,10.0,True,forward,"[0.0, 0.0, 0.0, 0.0]",12.0

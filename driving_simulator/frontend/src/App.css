@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.controls-help {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.controls-help h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.controls-help p {
+  margin: 3px 0;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+/* On-screen touch controls */
+.touch-controls {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 10px;
+  pointer-events: auto; /* Allow button clicks */
+}
+
+.control-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.control-btn:active {
+  background-color: rgba(0, 100, 255, 0.7);
+  transform: scale(0.95);
+}
+
+.accelerate {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.steer-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.steer-right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.brake {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Signal controls */
+.signal-controls {
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  pointer-events: auto; /* Allow button clicks */
+}
+
+.signal-controls button {
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.signal-controls button.active {
+  background-color: rgba(255, 204, 0, 0.5);
+  border-color: rgba(255, 204, 0, 0.8);
+}
+
+.gear-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  pointer-events: auto; /* Allow button clicks */
+}
+
+.gear-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gear-controls button.active {
+  background-color: rgba(0, 255, 0, 0.5);
+  border-color: rgba(0, 255, 0, 0.8);
+}
+
+.simulator-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.controls-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allow clicks to pass through by default */
+}
+
+.connection-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.scene-selector {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  pointer-events: auto; /* Allow button clicks */
+}
+
+.scene-selector button {
+  padding: 8px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scene-selector button:hover {
+  background-color: #555;
+}
+
+.scene-selector button.active {
+  background-color: #007bff;
+}
+
+.status-panel {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  font-family: monospace;
+  font-size: 14px;
+}
