@@ -2,6 +2,9 @@
 
 An AI-powered driving assistant that monitors vehicle telemetry in real time, detects unsafe behaviors across highway, intersection, and parking scenarios, logs events, and provides spoken corrective prompts via TTS. **Won first place for the AUO prize at MakeNTU 2025.**
 
+
+<img width="336" alt="Screenshot 2025-05-11 at 11 39 42 PM" src="https://github.com/user-attachments/assets/4dc9a436-063d-4145-8773-8019ae68ca16" />
+
 ## Collaborators
 
 Ryan Chen, Justin Tsai, Yuhan Huang, and William Su (All from the Electrical Engineering department at NTU)
