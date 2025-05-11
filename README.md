@@ -1,4 +1,4 @@
-# ai-cruise-assistant
+# Ai Cruise Assistant
 
 An AI-powered driving assistant that monitors vehicle telemetry in real time, detects unsafe behaviors across highway, intersection, and parking scenarios, logs events, and provides spoken corrective prompts via TTS.
 
